@@ -1,0 +1,20 @@
+root@CNRG-NTU-PC-Ubuntu:~/PycharmProjects/nengo_ocl_examples# python3 benchmark_circconv.py ocl 5000
+Choose platform:
+[0] <pyopencl.Platform 'NVIDIA CUDA' at 0x2d7e240>
+Choice [0]:0
+Set the environment variable PYOPENCL_CTX='0' to avoid being asked again.
+Simulation start
+buildtime: 4218 sec
+warmtime:
+Simulation finished in 0:00:01.                                                 
+runtime:
+Simulation finished in 0:02:42.                                                 
+OrderedDict([('benchmark', 'circ-conv'), ('name', 'GeForce GTX 1080'), ('dim', 5000), ('simtime', 10.0), ('neurons_per_product', 256), ('neurons', 6401024), ('status', 'ok'), ('profiling', 0), ('buildtime', 4218.896724939346), ('warmtime', 0.17322945594787598), ('runtime', 161.49147295951843), ('rmse', 0.45119187924520848)])
+GeForce GTX 1080, dims=5000 successful
+Exception ignored in: <bound method CacheIndex.__del__ of <nengo.cache.CacheIndex object at 0x7f763ed5dd30>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/nengo/cache.py", line 110, in __del__
+  File "/usr/local/lib/python3.5/dist-packages/nengo/cache.py", line 126, in sync
+  File "/usr/local/lib/python3.5/dist-packages/nengo/cache.py", line 115, in _load_index
+NameError: name 'open' is not defined
+
